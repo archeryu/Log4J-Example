@@ -1,0 +1,4 @@
+12:05:33,735 DEBUG [test2] test-log4j2-threads - Starting new loop
+12:05:33,744 WARN [test2] test-log4j2-threads - Thread number: 11 message number 0
+12:05:34,744 WARN [test2] test-log4j2-threads - Thread number: 11 message number 1
+12:05:35,744 WARN [test2] test-log4j2-threads - Thread number: 11 message number 2
