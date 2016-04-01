@@ -7,6 +7,7 @@
         </Console>
 
         <Routing name="RoutingAppender">
+            <!--'ctx' is Thread Context Map ,Log4j also supports the syntax ${prefix:name}-->
             <Routes pattern="$${ctx:logFilename}">
                 <Route>
                     <RollingFile name="Rolling-${ctx:logFilename}" fileName="logs/${ctx:logFilename}/mytest.log"
@@ -23,6 +24,7 @@
         </Routing>
     </Appenders>
     <Loggers>
+        <!-- The level may be configured with one of TRACE, DEBUG, INFO, WARN, ERROR, ALL or OFF. -->
         <Root level="trace">
             <AppenderRef ref="RoutingAppender"/>
         </Root>

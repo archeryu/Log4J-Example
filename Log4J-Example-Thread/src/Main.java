@@ -9,6 +9,8 @@ import org.apache.logging.log4j.ThreadContext;
 public class Main {
 
     public static void main(String[] args) {
+    	//the MDC is a map which stores the context data of the particular thread where the context is running.
+    	//log4j and logback all have this Class
         ThreadContext.put("logFilename","main");
         ThreadLogger.init();
 
